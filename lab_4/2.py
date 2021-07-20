@@ -1,5 +1,5 @@
 def sieve(n: int):
-    prime_numbers = [True] * n
+    prime_numbers = [True] * (n+1)
     prime_numbers[0] = prime_numbers[1] = False
 
     i = 2
