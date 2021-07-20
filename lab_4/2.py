@@ -12,6 +12,6 @@ def sieve(n: int):
                 prime_numbers[j]=False
                 j+=i
         i+=1
-
-n = int(input())
-sieve(n)
+if __name__ == "__main__":
+    n = int(input())
+    sieve(n)
