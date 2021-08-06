@@ -13,7 +13,7 @@ def rod_cut(n: int, price: list):
 
 if __name__ == "__main__":
 
-    price = [1, 5, 8, 9, 10, 17, 17, 20]
+    price = list(map(int, input('Input the prices: ').split(' ')))
     global dp
     dp = [None] * len(price)
-    print(rod_cut(len(price), price))
+    print(f"maximum profit: {rod_cut(len(price), price)}")
