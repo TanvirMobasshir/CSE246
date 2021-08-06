@@ -10,7 +10,7 @@ def Fib(n: int):									 #     time complexity: O(n^2)
 	if n == 2: return 1
 	return Fib(n-1)+Fib(n-2)
 
-def fib_dynamic(n: int):							#  	   time complexity: O(n)
+def fib_dynamic(n: int):							#  	   time complexity: O(n) || dynamic 
 	print(dp)
 	if n == 1: return 0
 	if n == 2: return 1
