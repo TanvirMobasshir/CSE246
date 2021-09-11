@@ -1,3 +1,6 @@
+import json
+
+
 class Element(object):
     def __init__(self, v: int, d: int):
         self.vertex = v
@@ -77,13 +80,6 @@ def dijkstra(graph, weights, source):
 if __name__ == '__main__':
     verticies, edges = list(map(int, input().split()))
 
-    graphs = weight = [] * (verticies+100)
-
-    for i in range(edges):
-        vertex, neighbour, distance = list(input().split())
-        distance = int(distance)
-
-        graphs[ord(vertex) - ord('a')].append(ord(neighbour) - ord('a'))
-        weight[ord(vertex) - ord('a')].append(distance)
-
-    dijkstra(graph=graphs, weights=weight, source=0)
+    graph = []
+    for i in graph:
+        i.append(None)
